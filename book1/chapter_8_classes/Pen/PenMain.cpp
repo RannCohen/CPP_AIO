@@ -34,6 +34,8 @@ int main()
     cout << "Ink level: " << FavoritePen.InkLevelPrecent << "%" << endl;
 
     FavoritePen.write_on_paper("Hello I am a pen");
+    FavoritePen.write_on_paper("Hello I am a pen");
+    FavoritePen.write_on_paper("Hello I am a pen");
     cout << "Ink Level: " << FavoritePen.InkLevelPrecent << "%" << endl;    
 
     return 0;
