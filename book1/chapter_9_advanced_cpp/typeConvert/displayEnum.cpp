@@ -5,7 +5,7 @@ using namespace std;
 class Colors
 {
     public:
-        enum ColorEnum { blue, red, green, yellow, black};
+        enum ColorEnum {blue, red, green, yellow, black};
         string AsString();
         Colors(Colors::ColorEnum value);
         
@@ -23,23 +23,23 @@ string Colors::AsString()
     switch (value)
     {
         case blue:
-            return blue;
-            break;
+            return "blue";
+
         case red:
-            return red;
-            break;
+            return "red";
+
         case green:
-            return green;
-            break;
+            return "green";
+
         case yellow:
-            return yellow;
-            break;
+            return "yellow";
+
         case black:
-            return black;
-            break;
+            return "black";
+            
         default:
             return " not found";
-            break;
+
     }
 }
 
@@ -47,5 +47,6 @@ int main()
 {
     Colors InkColor = Colors::red;
     cout << InkColor.AsString() << endl;
+    cout << InkColor.red << endl;
     return 0;
 }
